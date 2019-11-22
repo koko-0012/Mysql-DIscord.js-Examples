@@ -1,4 +1,6 @@
-
+/*
+Made by koko#0012
+*/
 const mysql = require('mysql');
 // Require the mysql
 const connection = mysql.createConnection(config)
