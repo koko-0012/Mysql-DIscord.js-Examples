@@ -58,4 +58,9 @@ connection.query(`SELECT * FROM account WHERE id = '${message.author.id}'`, func
 
     //to delete something from a row is 
     sql = `DELETE FROM account WHERE ('${user.id}')`
+    
+    //database is data change it however you like
+    //this will order it by worth so someone most money be data[0].money be mos tmoney in that database
+    connection.query('SELECT * FROM data ORDER BY TotalWorth DESC', function (err, data) {
+	
 })
